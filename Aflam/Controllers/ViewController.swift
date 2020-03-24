@@ -19,15 +19,41 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationItem()
+        
+        setupBarButtonItem()
+        
+        setupMmoviTableViewComponent()
+        
+    }
+    
+    func setupNavigationItem() {
         self.navigationItem.title = "Aflam"
         self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    func setupBarButtonItem() {
+        let filterButton = UIBarButtonItem(image: UIImage(systemName: "line.horizontal.3.decrease"), style: .plain, target: self, action: #selector(filterTapped))
+        self.navigationItem.leftBarButtonItem = filterButton
         
+        let favoriteButton = UIBarButtonItem(image: UIImage(systemName: "heart"), style: .plain, target: self, action: #selector(favoriteTapped))
+        self.navigationItem.rightBarButtonItem = favoriteButton
+    }
+    
+    func setupMmoviTableViewComponent() {
         self.movieTableView.register(UINib(nibName: "MovieCell", bundle: nil), forCellReuseIdentifier: "MovieCell")
         
         self.movieTableView.delegate = self
         self.movieTableView.dataSource = self
         self.movieTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-        
+    }
+    
+    @objc func filterTapped() {
+        print("Filter Tapped")
+    }
+    
+    @objc func favoriteTapped() {
+        print("Favorite Tapped")
     }
 
 
@@ -49,6 +75,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.releaseDateLabel.text = self.dates[indexPath.row]
         cell.descriptionLabel.text = self.descriptionText
         cell.movieImageView.image = UIImage(named: "default")
+        
+//        cell.layer.shadowColor = UIColor.gray.cgColor
+//        cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+//        cell.layer.shadowOpacity = 1.0
+//        cell.layer.masksToBounds = false
+        
         
 
         return cell
