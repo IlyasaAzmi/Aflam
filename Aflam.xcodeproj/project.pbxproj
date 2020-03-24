@@ -15,6 +15,8 @@
 		EDADFD0F2429918500587A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDADFD0E2429918500587A80 /* Assets.xcassets */; };
 		EDADFD122429918500587A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDADFD102429918500587A80 /* LaunchScreen.storyboard */; };
 		EDADFD1D2429918500587A80 /* AflamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDADFD1C2429918500587A80 /* AflamTests.swift */; };
+		EDADFD2924299A0700587A80 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDADFD2724299A0700587A80 /* MovieCell.swift */; };
+		EDADFD2A24299A0700587A80 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDADFD2824299A0700587A80 /* MovieCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		EDADFD182429918500587A80 /* AflamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AflamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDADFD1C2429918500587A80 /* AflamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AflamTests.swift; sourceTree = "<group>"; };
 		EDADFD1E2429918500587A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDADFD2724299A0700587A80 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		EDADFD2824299A0700587A80 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +87,9 @@
 			children = (
 				EDADFD022429918100587A80 /* AppDelegate.swift */,
 				EDADFD042429918100587A80 /* SceneDelegate.swift */,
-				EDADFD062429918100587A80 /* ViewController.swift */,
-				EDADFD082429918100587A80 /* Main.storyboard */,
+				EDADFD2C24299C0F00587A80 /* Controllers */,
+				EDADFD2B24299B9700587A80 /* Views */,
 				EDADFD0E2429918500587A80 /* Assets.xcassets */,
-				EDADFD102429918500587A80 /* LaunchScreen.storyboard */,
 				EDADFD132429918500587A80 /* Info.plist */,
 				EDADFD0B2429918100587A80 /* Aflam.xcdatamodeld */,
 			);
@@ -100,6 +103,25 @@
 				EDADFD1E2429918500587A80 /* Info.plist */,
 			);
 			path = AflamTests;
+			sourceTree = "<group>";
+		};
+		EDADFD2B24299B9700587A80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDADFD082429918100587A80 /* Main.storyboard */,
+				EDADFD102429918500587A80 /* LaunchScreen.storyboard */,
+				EDADFD2724299A0700587A80 /* MovieCell.swift */,
+				EDADFD2824299A0700587A80 /* MovieCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDADFD2C24299C0F00587A80 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDADFD062429918100587A80 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +207,7 @@
 			files = (
 				EDADFD122429918500587A80 /* LaunchScreen.storyboard in Resources */,
 				EDADFD0F2429918500587A80 /* Assets.xcassets in Resources */,
+				EDADFD2A24299A0700587A80 /* MovieCell.xib in Resources */,
 				EDADFD0A2429918100587A80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +229,7 @@
 				EDADFD072429918100587A80 /* ViewController.swift in Sources */,
 				EDADFD032429918100587A80 /* AppDelegate.swift in Sources */,
 				EDADFD052429918100587A80 /* SceneDelegate.swift in Sources */,
+				EDADFD2924299A0700587A80 /* MovieCell.swift in Sources */,
 				EDADFD0D2429918100587A80 /* Aflam.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
