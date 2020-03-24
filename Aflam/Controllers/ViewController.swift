@@ -50,10 +50,32 @@ class ViewController: UIViewController {
     
     @objc func filterTapped() {
         print("Filter Tapped")
+        // 1
+        let optionMenu = UIAlertController(title: nil, message: "Choose Movie Category", preferredStyle: .actionSheet)
+            
+        // 2
+        let popularAction = UIAlertAction(title: "Popular", style: .default)
+        let upcomingAction = UIAlertAction(title: "Upcoming", style: .default)
+        let topRatedAction = UIAlertAction(title: "Top Rated", style: .default)
+        let nowPlayingAction = UIAlertAction(title: "Now Playing", style: .default)
+            
+        // 3
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+            
+        // 4
+        optionMenu.addAction(popularAction)
+        optionMenu.addAction(upcomingAction)
+        optionMenu.addAction(topRatedAction)
+        optionMenu.addAction(nowPlayingAction)
+        optionMenu.addAction(cancelAction)
+            
+        // 5
+        self.present(optionMenu, animated: true, completion: nil)
     }
     
     @objc func favoriteTapped() {
         print("Favorite Tapped")
+        self.performSegue(withIdentifier: "showFavorite", sender: self)
     }
 
 
@@ -88,6 +110,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        self.performSegue(withIdentifier: "showDetail", sender: self)
     }
     
     

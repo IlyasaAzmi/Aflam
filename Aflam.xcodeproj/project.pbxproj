@@ -17,6 +17,8 @@
 		EDADFD1D2429918500587A80 /* AflamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDADFD1C2429918500587A80 /* AflamTests.swift */; };
 		EDADFD2924299A0700587A80 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDADFD2724299A0700587A80 /* MovieCell.swift */; };
 		EDADFD2A24299A0700587A80 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDADFD2824299A0700587A80 /* MovieCell.xib */; };
+		EDADFD2E2429AF8000587A80 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDADFD2D2429AF8000587A80 /* DetailViewController.swift */; };
+		EDADFD302429C7B500587A80 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDADFD2F2429C7B500587A80 /* FavoriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		EDADFD1E2429918500587A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDADFD2724299A0700587A80 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		EDADFD2824299A0700587A80 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		EDADFD2D2429AF8000587A80 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EDADFD2F2429C7B500587A80 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				EDADFD062429918100587A80 /* ViewController.swift */,
+				EDADFD2D2429AF8000587A80 /* DetailViewController.swift */,
+				EDADFD2F2429C7B500587A80 /* FavoriteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,6 +235,8 @@
 				EDADFD072429918100587A80 /* ViewController.swift in Sources */,
 				EDADFD032429918100587A80 /* AppDelegate.swift in Sources */,
 				EDADFD052429918100587A80 /* SceneDelegate.swift in Sources */,
+				EDADFD302429C7B500587A80 /* FavoriteViewController.swift in Sources */,
+				EDADFD2E2429AF8000587A80 /* DetailViewController.swift in Sources */,
 				EDADFD2924299A0700587A80 /* MovieCell.swift in Sources */,
 				EDADFD0D2429918100587A80 /* Aflam.xcdatamodeld in Sources */,
 			);
